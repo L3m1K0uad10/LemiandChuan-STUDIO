@@ -1,0 +1,60 @@
+
+.content-layer {
+    position: relative;
+    z-index: 10;
+}
+
+.ellipse2-blur-layer {
+    width: 480px;
+    height: 480px;
+    border-radius: 100%;
+    background-color: #000000;
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.ellipse3-blur-layer {
+    width: 276px;
+    height: 276px;
+    border-radius: 100%;
+    background-color: #0A15A7;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    filter: blur(100px);
+}
+
+.ellipse4-blur-layer {
+    width: 173px;
+    height: 173px;
+    border-radius: 100%;
+    background-color: #0A15A7;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    filter: blur(20px);
+}
+
+.ellipse5-blur-layer {
+    width: 276px;
+    height: 276px;
+    border-radius: 100%;
+    background-color: #0A15A7;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+    filter: blur(100px);
+}

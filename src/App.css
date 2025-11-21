@@ -7,11 +7,18 @@ body {
   min-height: 100vh; */
 }
 
+/* Default styles for #root */
 #root {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
   /* justify-content: center; */
 }
+
+/* Specific styles for #root ONLY when on the HomePage */
+#root.root-homepage {
+  height: 100vh;
+}
+
