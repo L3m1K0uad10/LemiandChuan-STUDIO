@@ -1,23 +1,14 @@
 import React from "react";
 
-import SvgLogo from "../assets/logo.svg?react";
 import Brain from "../assets/brain-blue.png";
+import Navbar from "../components/Navbar";
 
 
 
 function HomePage() {
     return(
         <div className = "homepage-container" style = {{display: "flex", flexDirection: "column", gap: "auto", height: "100%"}}>
-            <nav className = "homepage-nav-bar" style = {{height: "100px", display: "flex", alignItems: "center", justifyContent: "space-between"}}>
-                <SvgLogo className="site-logo" width="100" height="75" />
-                <ul className = "nav-links" style = {{listStyleType: "none", display: "flex", gap: "30px", fontSize: "18px", margin: "0"}}>
-                    <li><a style = {{color: "white"}} href="#">Home</a></li>
-                    <li><a style = {{color: "white"}} href="#">Projects</a></li>
-                    <li><a style = {{color: "white"}} href="#">Services</a></li>
-                    <li><a style = {{color: "white"}} href="#">About Us</a></li>
-                    <li><a style = {{color: "white"}} href="#">Contact Us</a></li>
-                </ul>
-            </nav>
+            <Navbar />
 
             <section className = "homepage-hero-section" style={{position: "relative", height: "100%", width: "100%", paddingTop: "40px", display: "flex", flexDirection: "column", justifyContent: "center", /* gap: "30px" */}}>
                 <h3 style = {{width: "580px"}}>Through intuitive design, immersive visuals, and meaningful storytelling, we create experiences that people don't just see -- they truly feel.</h3>
