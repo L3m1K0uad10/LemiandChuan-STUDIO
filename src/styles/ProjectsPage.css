@@ -11,7 +11,7 @@
     background-color: #000000;
     /* border: 2px solid white; */
     position: absolute;
-    top: 85%;
+    top: 480px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -23,7 +23,7 @@
     border-radius: 100%;
     background-color: #0A15A7;
     position: absolute;
-    top: 40%;
+    top: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -37,7 +37,7 @@
     border-radius: 100%;
     background-color: #0A15A7;
     position: absolute;
-    top: 40%;
+    top: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -51,10 +51,60 @@
     border-radius: 100%;
     background-color: #0A15A7;
     position: absolute;
-    top: 60%;
+    top: 375px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
 
     filter: blur(100px);
+}
+
+
+/* SHOWCASING-CONTAINER */
+.showcase-image {
+    width: 300px;
+}
+
+.show-1 {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.show-3 {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+/* PROJECTS DISPLAY CONTAINER */
+.projects-display-container {
+    margin-top: 30px;
+}
+
+.projects-display-container .filters-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.filters-container button {
+    padding: 10px; 
+    border: 1px solid gray; 
+    border-radius: 20px; 
+    font-size: 12px;
+}
+
+.filters-container button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #000000;
+    border: 1px solid white;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+    margin-top: 30px
 }
