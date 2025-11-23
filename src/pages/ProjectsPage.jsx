@@ -79,6 +79,14 @@ function ProjectsPage() {
                     </div>
                 </div>
             </div>
+
+            <div className = "arc-blur-wrapper-1">
+                <div className = "arc-blur-layer-1"></div>
+            </div>
+
+            <div className = "arc-blur-wrapper-2">
+                <div className = "arc-blur-layer-2"></div>
+            </div>
         </div>
     )
 }

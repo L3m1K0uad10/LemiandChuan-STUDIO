@@ -5,6 +5,9 @@
     justify-content: center;
 }
 
+
+/* ELLISPE BLUR LAYER */
+
 .ellipse2-blur-layer {
     width: 480px;
     height: 480px;
@@ -150,4 +153,65 @@
     transform: rotate(315deg);
     color: #0A15A7;
     margin-left: 10px;
+}
+
+
+
+/* ARC BLUR LAYER STYLING */
+.arc-blur-wrapper-1 {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    filter: blur(50px); /* Applied to the whole arc shape */
+}
+
+.arc-blur-wrapper-2 {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    filter: blur(50px); /* Applied to the whole arc shape */
+}
+
+.arc-blur-layer-1 {
+    --b: 100px; /* the boder thickness */
+    --a: 90deg; /* control the progression */
+    
+    width: 400px;
+    aspect-ratio: 1;
+    padding: var(--b);
+    border-radius: 50%;
+    background: #0A15A7;
+    --_g:/var(--b) var(--b) no-repeat
+        radial-gradient(50% 50%,#000 97%,#0000);
+    mask: top var(--_g),
+        calc(50% + 50%*sin(var(--a))) 
+        calc(50% - 50%*cos(var(--a))) var(--_g),
+        linear-gradient(#0000 0 0) content-box intersect,
+        conic-gradient(#000 var(--a),#0000 0);
+
+    transform: rotate(90deg);
+}
+
+.arc-blur-layer-2 {
+    --b: 100px; /* the boder thickness */
+    --a: 90deg; /* control the progression */
+    
+    width: 400px;
+    aspect-ratio: 1;
+    padding: var(--b);
+    border-radius: 50%;
+    background: #0A15A7;
+    --_g:/var(--b) var(--b) no-repeat
+        radial-gradient(50% 50%,#000 97%,#0000);
+    mask: top var(--_g),
+        calc(50% + 50%*sin(var(--a))) 
+        calc(50% - 50%*cos(var(--a))) var(--_g),
+        linear-gradient(#0000 0 0) content-box intersect,
+        conic-gradient(#000 var(--a),#0000 0);
+    
+    transform: rotate(270deg);
 }
