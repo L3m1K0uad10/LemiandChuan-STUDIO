@@ -2,6 +2,7 @@
 .content-layer {
     position: relative;
     z-index: 10;
+    justify-content: center;
 }
 
 .ellipse2-blur-layer {
@@ -107,4 +108,46 @@
     gap: 15px;
     justify-items: center;
     margin-top: 30px
+}
+
+.load-more-btn {
+    padding: 10px 30px; 
+    border: 1px solid gray; 
+    border-radius: 20px; 
+}
+
+.load-more-btn-icon {
+    margin-left: 10px;
+}
+
+.load-more-btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #000000;
+    border: 1px solid white;
+}
+
+.call-container {
+    display: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.request-service-btn {
+    padding: 10px 30px; 
+    border: 1px solid white; 
+    border-radius: 20px; 
+    background-color: white;
+    color: black;
+}
+
+.request-service-btn:hover {
+    background-color: #f0efef;
+    border: 1px solid #f0efef;
+}
+
+.request-service-btn-icon {
+    transform: rotate(315deg);
+    color: #0A15A7;
+    margin-left: 10px;
 }

@@ -1,5 +1,8 @@
 import React from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowsRotate, faArrowRight } from "@fortawesome/free-solid-svg-icons"
+
 import Navbar from "../components/Navbar";
 import Project from "../components/ProjectCard"
 import "../styles/ProjectsPage.css";
@@ -48,6 +51,31 @@ function ProjectsPage() {
                     </div>
                     <div className = "cards-container">
                         {projectdisplays}
+                    </div>
+                    <div style = {{textAlign: "center", marginTop: "50px"}}>
+                        <button className = "load-more-btn">
+                            LOAD MORE
+                            <FontAwesomeIcon className = "load-more-btn-icon" icon = {faArrowsRotate}/>
+                        </button>
+                    </div>
+                </div>
+                <div style = {{display: "flex", justifyContent: "center", alignItems: "center", margin: "250px 0px"}}>
+                    <div className = "call-container" style = {{width: "900px"}}>
+                        <h4 style = {{fontSize: "50px", margin: "0px", fontWeight: "normal", textAlign: "center"}}>
+                            Turn Your Ideas Into <strong><em>Digital Experiences That Leave A Lasting Impact</em></strong>
+                        </h4>
+                        <div style = {{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <p style = {{textAlign: "center", width: "480px"}}>
+                                You have a vision worth building — we bring it to life with design 
+                                and technology that stand out. 
+                            </p>
+                        </div>
+                        <div style = {{textAlign: "center"}}>
+                            <button className = "request-service-btn">
+                                Request a Service
+                                <FontAwesomeIcon className = "request-service-btn-icon" icon = {faArrowRight}/>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
