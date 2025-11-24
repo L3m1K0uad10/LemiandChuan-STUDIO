@@ -5,6 +5,7 @@ import "./App.css";
 
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
+import ServicesPage from "./pages/ServicesPage";
 
 
 
@@ -33,6 +34,7 @@ function RootContainer() {
     <Routes>
       <Route path="/" element={<HomePage />}></Route>
       <Route path="/projects" element={<ProjectsPage />}></Route>
+      <Route path="/services" element={<ServicesPage />}></Route>
     </Routes>
   )
 }

@@ -21,6 +21,7 @@ function ProjectsPage() {
             title = {project.title}
             image = {project.img}
             category = {project.category}
+            alt = {project.alt}
         />
     ))
 

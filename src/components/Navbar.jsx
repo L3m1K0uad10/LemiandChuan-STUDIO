@@ -12,7 +12,7 @@ const Navbar = () => {
             <ul className = "nav-links" style = {{listStyleType: "none", display: "flex", gap: "30px", fontSize: "18px", margin: "0"}}>
                 <li><Link to = "/" style = {{color: "white"}} href="#">Home</Link></li>
                 <li><Link to = "/projects" style = {{color: "white"}} href="#">Projects</Link></li>
-                <li><Link style = {{color: "white"}} href="#">Services</Link></li>
+                <li><Link to = "/services" style = {{color: "white"}} href="#">Services</Link></li>
                 <li><Link style = {{color: "white"}} href="#">About Us</Link></li>
                 <li><Link style = {{color: "white"}} href="#">Contact Us</Link></li>
             </ul>
