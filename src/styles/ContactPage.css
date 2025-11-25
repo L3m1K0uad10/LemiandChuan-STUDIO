@@ -35,6 +35,10 @@
     border-radius: 30px;
 }
 
+.service-btn-container {
+    width: 510px;
+}
+
 .service-btn-container div {
     display: flex;
     justify-content: space-between;
