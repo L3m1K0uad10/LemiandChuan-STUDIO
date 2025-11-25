@@ -14,7 +14,7 @@ const Navbar = () => {
                 <li><Link to = "/projects" style = {{color: "white"}} href="#">Projects</Link></li>
                 <li><Link to = "/services" style = {{color: "white"}} href="#">Services</Link></li>
                 <li><Link style = {{color: "white"}} href="#">About Us</Link></li>
-                <li><Link style = {{color: "white"}} href="#">Contact Us</Link></li>
+                <li><Link to = "/contact-us" style = {{color: "white"}} href="#">Contact Us</Link></li>
             </ul>
         </nav>
     )
