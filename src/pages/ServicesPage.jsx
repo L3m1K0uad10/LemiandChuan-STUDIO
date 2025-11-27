@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
@@ -23,6 +23,42 @@ function ServicesPage() {
             alt = {service.alt}
         />
     ))
+
+    useEffect(() => {
+        const infoElement = document.querySelector('.why-choose-us-info');
+        const imageElement = document.querySelector('.why-choose-us-image');
+    
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');  
+                    } else {
+                        entry.target.classList.remove('in-view');
+                    }
+                });
+            },
+            { threshold: 0.1 } // Trigger when 50% of the element is visible
+        );
+    
+        // Dynamically setting the direction for each element using CSS variables
+        if (infoElement) {
+            infoElement.style.setProperty('--start-position', '300px'); // Comes from the right
+        }
+        if (imageElement) {
+            imageElement.style.setProperty('--start-position', '-300px'); // Comes from the left
+        }
+    
+        observer.observe(infoElement);
+        observer.observe(imageElement);
+    
+        // Clean up observer
+        return () => {
+            observer.unobserve(infoElement);
+            observer.unobserve(imageElement);
+        };
+    }, []);
+    
 
     return(
         <div className = "service-container" style = {{display: "flex", flexDirection: "column", gap: "auto", position: "relative", overflow: "hidden"}}>
@@ -50,11 +86,11 @@ function ServicesPage() {
                     </button>
                 </div>
                 <div className = "why-choose-us-container">
-                    <div style = {{position: "relative", width: "482px", height: "335px"}}>
+                    <div className = "why-choose-us-image autoshow" style = {{position: "relative", width: "482px", height: "335px"}}>
                         <img src = {WCUImage} alt = "why choose us?" className = "wcu-image-bg"/>
                         <img src = {Persona} alt = "persona" className = "wcu-image-persona"/>
                     </div>
-                    <div style = {{width: "400px"}}>
+                    <div className = "why-choose-us-info autoshow" style = {{width: "400px"}}>
                         <p style = {{fontSize: "50px", margin: "0px"}}>Why Choose Us?</p>
                         <ul>
                             <li><strong><em>We Are Reliable</em></strong>: You Can Count On Us To Deliver Every Time.</li>

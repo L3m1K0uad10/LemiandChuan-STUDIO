@@ -54,3 +54,27 @@
 
     filter: blur(100px);
 }
+
+
+/* ANIMATION */
+.why-choose-us-image, .why-choose-us-info {
+    opacity: 0;
+    transform: translateX(0); 
+    transition: all 1s ease;
+}
+
+.why-choose-us-info.in-view, .why-choose-us-image.in-view {
+    opacity: 1;
+    animation: element-appear 1s ease-in-out forwards;
+}
+
+@keyframes element-appear {
+    from {
+        opacity: 0;
+        transform: translateX(var(--start-position, 300px)); /* Default 300px for right */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
