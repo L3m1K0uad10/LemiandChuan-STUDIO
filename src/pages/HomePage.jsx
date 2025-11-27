@@ -1,6 +1,7 @@
 import React from "react";
 
 import Brain from "../assets/brain-blue.png";
+import BrainGif from "../assets/brain.gif";
 import Navbar from "../components/Navbar";
 
 
@@ -26,7 +27,7 @@ function HomePage() {
                             Request a service
                         </button>
                     </div>
-                    <img src={Brain} alt="blue brain" style={{position: "absolute", right: "-1%", bottom: "25%", width: "40%", height: "auto", zIndex: 3, transform: "translate(0, 0)"}}/>
+                    <img src={BrainGif} alt="blue brain" style={{position: "absolute", right: "-1%", bottom: "25%", width: "40%", height: "auto", zIndex: 3, transform: "translate(0, 0)"}}/>
                 </div>
 
                 <div style = {{marginTop: "20px", display: "flex", gap: "10px", marginLeft: "auto"}}>
