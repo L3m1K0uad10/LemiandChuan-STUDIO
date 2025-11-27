@@ -12,6 +12,9 @@
     z-index: 2;
 }
 
+
+
+/* FORM SYLING */
 .contact-us-form {
     display: flex;
     flex-direction: column;
@@ -21,11 +24,19 @@
     margin-top: 50px;
 }
 
+.glass {
+    background: linear-gradient(135deg, rgba(225, 225, 225, 0.1), rgba(225, 225, 225, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
 .contact-us-form input {
     width: 480px;
     height: 42px;
     border-radius: 30px;
-    border: 1px solid gray;
     padding-left: 30px;
 }
 
@@ -33,6 +44,7 @@
     width: 450px; 
     padding: 30px 30px;
     border-radius: 30px;
+    resize: none;
 }
 
 .service-btn-container {
@@ -88,3 +100,5 @@
 .media-icon {
     font-size: 24px;
 }
+
+

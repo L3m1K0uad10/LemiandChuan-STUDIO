@@ -8,6 +8,7 @@ import Service from "../components/ServiceCard";
 import "../styles/ServicesPage.css";
 import { services } from "../data/data";
 import WCUImage from "../assets/wcu/wcubg.png";
+import Persona from "../assets/wcu/persona.png";
 
 
 
@@ -49,7 +50,10 @@ function ServicesPage() {
                     </button>
                 </div>
                 <div className = "why-choose-us-container">
-                    <img src = {WCUImage} alt = "why choose us?" style = {{width: "442px", border: "20px solid white", borderRadius: "20px"}}/>
+                    <div style = {{position: "relative", width: "482px", height: "335px"}}>
+                        <img src = {WCUImage} alt = "why choose us?" className = "wcu-image-bg"/>
+                        <img src = {Persona} alt = "persona" className = "wcu-image-persona"/>
+                    </div>
                     <div style = {{width: "400px"}}>
                         <p style = {{fontSize: "50px", margin: "0px"}}>Why Choose Us?</p>
                         <ul>

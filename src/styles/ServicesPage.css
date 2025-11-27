@@ -27,6 +27,20 @@
     gap: 30px;
 }
 
+.wcu-image-bg {
+    width: 442px; 
+    border: 20px solid white; 
+    border-radius: 20px;
+    position: absolute;
+}
+
+.wcu-image-persona {
+    width: 500px;
+    position: absolute;
+    top: -20px;
+    left: 15px;
+}
+
 .blur-layer {
     width: 226px;
     height: 226px;

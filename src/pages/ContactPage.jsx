@@ -28,8 +28,8 @@ function ContactPage() {
                     <p style = {{fontSize: "50px", margin: "0px"}}><strong><em>Let's talk</em></strong></p>
                 </div>   
                 <form className = "contact-us-form" action="">
-                    <div className = "name-container" style = {{marginBottom: "12px"}}><input type = "text" placeholder = "Full name/Company name"/></div>
-                    <div className = "email-container"><input type = "text" placeholder = "Email"/></div>
+                    <div className = "name-container" style = {{marginBottom: "12px"}}><input className = "glass" type = "text" placeholder = "Full name/Company name"/></div>
+                    <div className = "email-container"><input className = "glass" type = "text" placeholder = "Email"/></div>
                     <div className = "service-btn-container">
                         <p>I'm interested on</p>
                         <div>
@@ -40,7 +40,7 @@ function ContactPage() {
                     </div>
                     <div className = "textarea-container">
                         <p>Tell us more about your Project</p>
-                        <textarea rows = "10" placeholder = "Write here"/>
+                        <textarea className = "glass" rows = "10" placeholder = "Write here"/>
                     </div>
 
                     <button className = "form-submit-btn" type = "submit" >SEND</button>

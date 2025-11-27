@@ -22,3 +22,15 @@ body {
   height: 100vh;
 }
 
+
+.active-link {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 30px;
+}
+
+.inactive-link {
+  color: white;
+}
