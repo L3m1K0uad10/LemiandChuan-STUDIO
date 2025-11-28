@@ -5,6 +5,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 import Navbar from "../components/Navbar";
 import Service from "../components/ServiceCard";
+import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import "../styles/ServicesPage.css";
 import { services } from "../data/data";
 import WCUImage from "../assets/wcu/wcubg.png";
@@ -24,41 +25,10 @@ function ServicesPage() {
         />
     ))
 
-    useEffect(() => {
-        const infoElement = document.querySelector('.why-choose-us-info');
-        const imageElement = document.querySelector('.why-choose-us-image');
-    
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('in-view');  
-                    } else {
-                        entry.target.classList.remove('in-view');
-                    }
-                });
-            },
-            { threshold: 0.1 } // Trigger when 50% of the element is visible
-        );
-    
-        // Dynamically setting the direction for each element using CSS variables
-        if (infoElement) {
-            infoElement.style.setProperty('--start-position', '300px'); // Comes from the right
-        }
-        if (imageElement) {
-            imageElement.style.setProperty('--start-position', '-300px'); // Comes from the left
-        }
-    
-        observer.observe(infoElement);
-        observer.observe(imageElement);
-    
-        // Clean up observer
-        return () => {
-            observer.unobserve(infoElement);
-            observer.unobserve(imageElement);
-        };
-    }, []);
-    
+    useRevealOnScroll([
+        {selector: ".why-choose-us-info", start: "300px"},
+        {selector: ".why-choose-us-image", start: "-300px"}
+    ]);
 
     return(
         <div className = "service-container" style = {{display: "flex", flexDirection: "column", gap: "auto", position: "relative", overflow: "hidden"}}>
@@ -72,7 +42,7 @@ function ServicesPage() {
             <div className = "blue-rectangle-layer"></div>
             
             <div className = "content-layer">
-                <div style = {{textAlign: "center", marginTop: "150px"}}>
+                <div className = "page-header">
                     <h1 style = {{fontSize: "150px", margin: "0px"}}>Service</h1>
                     <p style = {{fontSize: "50px", margin: "0px"}}><strong><em>Professionalism</em></strong> with<strong><em> good deal</em></strong></p>
                 </div>

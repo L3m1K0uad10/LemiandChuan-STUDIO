@@ -64,6 +64,25 @@
 }
 
 
+/* PAGE-HEADER  AND ANIMATION */
+.page-header {
+    text-align: center; 
+    margin-top: 150px;
+    animation: bottom-fade-in 1.2s ease-out forwards;
+}
+
+@keyframes bottom-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 /* SHOWCASING-CONTAINER */
 .showcase-image {
     width: 300px;
@@ -130,11 +149,32 @@
     border: 1px solid white;
 }
 
+/* CALL CONTAINER AND ANIMATION */
+
 .call-container {
-    display: column;
-    justify-content: center;
-    align-items: center;
+    width: 900px;
+    opacity: 0;
+    transform: translateY(0);
+    transition: all 1s ease;
 }
+
+.call-container.in-view {
+    opacity: 1;
+    animation: fade-in 1.2s ease-out forwards; 
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(var(--start-position, 50px));
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------------------- */
 
 .request-service-btn {
     padding: 10px 30px; 
@@ -163,8 +203,10 @@
     bottom: 50px;
     left: 50%;
     z-index: 1;
-    transform: translateX(-50%);
     filter: blur(50px); /* Applied to the whole arc shape */
+    opacity: 0;
+    transform: translateX(-50%) translateY(0);
+    transition: all 1s ease;
 }
 
 .arc-blur-wrapper-2 {
@@ -172,8 +214,15 @@
     bottom: 100px;
     left: 50%;
     z-index: 1;
-    transform: translateX(-50%);
     filter: blur(50px); /* Applied to the whole arc shape */
+    opacity: 0;
+    transform: translateX(-50%) translateY(var(--start-position, 300px));
+    transition: all 1s ease;
+}
+
+.arc-blur-wrapper-1.in-view, .arc-blur-wrapper-2.in-view {
+    opacity: 1;
+    animation: appear 1s ease-in-out forwards;
 }
 
 .arc-blur-layer-1 {
@@ -214,4 +263,15 @@
         conic-gradient(#000 var(--a),#0000 0);
     
     transform: rotate(270deg);
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(var(--start-position, 300px));
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
 }

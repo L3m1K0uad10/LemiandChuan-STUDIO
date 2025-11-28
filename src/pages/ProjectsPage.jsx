@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowsRotate, faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 import Navbar from "../components/Navbar";
-import Project from "../components/ProjectCard"
+import Project from "../components/ProjectCard";
+import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import "../styles/ProjectsPage.css";
 import Show1 from "../assets/showcase/show-01.png";
 import Show2 from "../assets/showcase/show-02.png";
@@ -25,6 +26,12 @@ function ProjectsPage() {
         />
     ))
 
+    useRevealOnScroll([
+        {selector: ".call-container", start: "50px"},
+        {selector: ".arc-blur-wrapper-1", start: "-150px"},
+        {selector: ".arc-blur-wrapper-2", start: "150px"},
+    ]);
+
     return(
         <div className = "projectspage-container" style = {{display: "flex", flexDirection: "column", gap: "auto", position: "relative"}}>
             <Navbar />
@@ -35,7 +42,7 @@ function ProjectsPage() {
             <div className = "ellipse5-blur-layer"></div>
             
             <div className = "content-layer">
-                <div style = {{textAlign: "center", marginTop: "150px"}}>
+                <div className = "page-header">
                     <h1 style = {{fontSize: "150px", margin: "0px"}}>Projects</h1>
                     <p style = {{fontSize: "50px", margin: "0px"}}>From <strong><em>idea</em></strong> to <strong><em>realization</em></strong></p>
                 </div>
@@ -61,7 +68,7 @@ function ProjectsPage() {
                     </div>
                 </div>
                 <div style = {{display: "flex", justifyContent: "center", alignItems: "center", margin: "250px 0px"}}>
-                    <div className = "call-container" style = {{width: "900px"}}>
+                    <div className = "call-container">
                         <h4 style = {{fontSize: "50px", margin: "0px", fontWeight: "normal", textAlign: "center"}}>
                             Turn Your Ideas Into <strong><em>Digital Experiences That Leave A Lasting Impact</em></strong>
                         </h4>

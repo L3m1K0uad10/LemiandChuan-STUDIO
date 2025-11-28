@@ -23,7 +23,7 @@ function ContactPage() {
             <div className = "blue-rectangle-layer-2"></div>
             
             <div className = "content-layer">
-                <div style = {{textAlign: "center", marginTop: "150px"}}>
+                <div className = "page-header">
                     <h1 style = {{fontSize: "150px", margin: "0px"}}>Contact Us</h1>
                     <p style = {{fontSize: "50px", margin: "0px"}}><strong><em>Let's talk</em></strong></p>
                 </div>   
