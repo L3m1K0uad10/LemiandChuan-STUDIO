@@ -5,11 +5,18 @@ import { faEnvelope, faCopyright } from "@fortawesome/free-regular-svg-icons";
 import { faXTwitter, faWhatsapp, faInstagram  } from "@fortawesome/free-brands-svg-icons"
 
 import Navbar from "../components/Navbar";
+import useRevealOnScroll from "../hooks/useRevealOnScroll"; 
 import "../styles/ContactPage.css";
 
 
 
 function ContactPage() {
+
+    useRevealOnScroll([
+        {selector: ".contact-us-more-info-section-header", start: "-50px"},
+        {selector: ".medias-container", start: "50px"},
+        {selector: ".copyright", start: "-50px"},
+    ])
 
     return(
         <div className = "contact-container" style = {{display: "flex", flexDirection: "column", gap: "auto", position: "relative", overflow: "hidden"}}>
@@ -46,7 +53,7 @@ function ContactPage() {
                     <button className = "form-submit-btn" type = "submit" >SEND</button>
                 </form> 
                 <div className = "contact-us-more-info-section">
-                    <p style = {{fontSize: "50px", margin: "0px", width: "500px", alignSelf: "flex-start"}}>Is there a fascinating project <span style = {{color: "gray"}}>brewing in your mind?</span></p>
+                    <p className = "contact-us-more-info-section-header">Is there a fascinating project <span style = {{color: "gray"}}>brewing in your mind?</span></p>
                     <div className = "medias-container">
                         <p><FontAwesomeIcon className = "media-icon" icon = {faEnvelope}/> LemiandChuanstudio@gmail.com</p>
                         <div classNames = "social-medias">
@@ -55,7 +62,7 @@ function ContactPage() {
                             <FontAwesomeIcon className = "media-icon" icon = {faInstagram}/>
                         </div>
                     </div>
-                    <p style = {{marginTop: "260px"}}><FontAwesomeIcon icon = {faCopyright}/>2025 L&C studio, All Rights reserved</p>
+                    <p className = "copyright"><FontAwesomeIcon icon = {faCopyright}/>2025 L&C studio, All Rights reserved</p>
                 </div>  
             </div>
 
