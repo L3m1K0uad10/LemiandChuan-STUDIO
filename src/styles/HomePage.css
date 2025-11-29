@@ -52,6 +52,26 @@
     }
 }
 
+.white-box {
+    width: 70%; 
+    background-color: white; 
+    padding: 30px; 
+    border-radius: 20px; 
+    position: relative; 
+    z-index: 2; 
+    margin-top: 30px
+}
+
+.brain-gif {
+    position: absolute; 
+    right: -1%; 
+    bottom: 25%; 
+    width: 40%; 
+    height: auto; 
+    z-index: 3; 
+    transform: translate(0, 0)
+}
+
 .service-tags-container button {
     padding: 10px; 
     border: 1px solid gray; 

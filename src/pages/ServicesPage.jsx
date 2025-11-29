@@ -6,7 +6,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import Navbar from "../components/Navbar";
 import Service from "../components/ServiceCard";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
-import "../styles/ServicesPage.css";
+/* import "../styles/ServicesPage.css"; */
 import { services } from "../data/data";
 import WCUImage from "../assets/wcu/wcubg.png";
 import Persona from "../assets/wcu/persona.png";

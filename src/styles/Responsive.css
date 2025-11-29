@@ -1,0 +1,19 @@
+
+
+/* SERVICES PAGE RESPONSIVENESS */
+@media (max-width: 1128px) {
+    .service-card {
+        width: 220px;
+    }
+}
+
+
+/* HOME PAGE RESPONSIVENESS */
+@media (max-width: 1107px) {
+    .brain-gif {
+        display: none;
+    }
+    .white-box {
+        width: 100%;
+    }
+}

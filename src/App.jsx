@@ -2,6 +2,11 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 import "./App.css";
+import "./styles/HomePage.css";
+import "./styles/ProjectsPage.css";
+import "./styles/ServicesPage.css";
+import "./styles/ContactPage.css";
+import "./styles/Responsive.css";
 
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";

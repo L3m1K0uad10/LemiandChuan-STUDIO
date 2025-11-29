@@ -6,7 +6,7 @@ import { faArrowsRotate, faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import Navbar from "../components/Navbar";
 import Project from "../components/ProjectCard";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
-import "../styles/ProjectsPage.css";
+/* import "../styles/ProjectsPage.css"; */
 import Show1 from "../assets/showcase/show-01.png";
 import Show2 from "../assets/showcase/show-02.png";
 import Show3 from "../assets/showcase/show-03.png";

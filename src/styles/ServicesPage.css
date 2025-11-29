@@ -1,4 +1,27 @@
 
+/* SERVICE CARD STYLE */
+
+.service-card {
+    width: 280px;
+}
+ 
+.service-card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.service-card h4 {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    color: #999999;
+    font-size: 20px;
+}
+
+.service-card p {
+    margin: 0px;
+}
+
+/* ------------------ */
 
 .blue-rectangle-layer {
     width: 100%;

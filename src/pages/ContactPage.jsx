@@ -6,7 +6,7 @@ import { faXTwitter, faWhatsapp, faInstagram  } from "@fortawesome/free-brands-s
 
 import Navbar from "../components/Navbar";
 import useRevealOnScroll from "../hooks/useRevealOnScroll"; 
-import "../styles/ContactPage.css";
+/* import "../styles/ContactPage.css"; */
 
 
 

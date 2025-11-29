@@ -3,7 +3,7 @@ import React from "react";
 import Brain from "../assets/brain-blue.png";
 import BrainGif from "../assets/brain.gif";
 import Navbar from "../components/Navbar";
-import "../styles/HomePage.css";
+/* import "../styles/HomePage.css"; */
 
 
 
@@ -15,8 +15,8 @@ function HomePage() {
             <section className = "homepage-hero-section">
                 <h3>Through intuitive design, immersive visuals, and meaningful storytelling, we create experiences that people don't just see -- they truly feel.</h3>
 
-                <div style={{position: "relative", width: "100%", /* maxWidth: "900px", *//* height: "400px", */display: "flex", alignItems: "center"}}>
-                    <div style={{width: "70%", backgroundColor: "white", padding: "30px", borderRadius: "20px", position: "relative", zIndex: 2, marginTop: "30px"}}>
+                <div className = "white-box-container" style={{position: "relative", width: "100%", /* maxWidth: "900px", *//* height: "400px", */display: "flex", alignItems: "center"}}>
+                    <div className = "white-box">
                         <div style = {{width: "580px"}}>
                             <h1 style={{ color: "black", margin: 0, fontSize: "46px" }}>We Craft Digital Experiences That Matter</h1>
                         </div>
@@ -28,7 +28,7 @@ function HomePage() {
                             Request a service
                         </button>
                     </div>
-                    <img src={BrainGif} alt="blue brain" style={{position: "absolute", right: "-1%", bottom: "25%", width: "40%", height: "auto", zIndex: 3, transform: "translate(0, 0)"}}/>
+                    <img className = "brain-gif" src = {BrainGif} alt="blue brain"/>
                 </div>
 
                 <div className = "service-tags-container">
