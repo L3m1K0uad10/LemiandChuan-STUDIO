@@ -5,6 +5,35 @@
     .service-card {
         width: 220px;
     }
+    .why-choose-us-container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 984px) {
+    .services-cards-display-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-card img {
+        width: 280px;
+    }
+    .service-card {
+        display: flex;
+        width: 90%;
+        gap: 20px;
+    }
+    .service-card .details {
+        padding-right: 10px;
+    }
+    .blue-rectangle-layer {
+        width: 70%;
+        height: 660px;
+        top: 760px;
+        left: 60%;
+    }
+    .service-page-request-service-btn-container {
+        margin-top: 50px;
+    }
 }
 
 
@@ -15,5 +44,83 @@
     }
     .white-box {
         width: 100%;
+    }
+}
+
+
+/* CONTACT PAGE RESPONSIVENESS */
+@media (max-width: 970px) {
+    .page-header h1 {
+        font-size: 100px; 
+        margin: 0px;
+    }
+    
+    .page-header p {
+        font-size: 35px;
+        margin: 0px;
+    }
+
+    .blue-rectangle-layer-2 {
+        top: 775px;
+    }
+}
+
+
+/* PROJECTS PAGE RESPONSIVENESS */
+@media (max-width: 1130px) {
+    .showcase-image {
+        width: 200px;
+    }
+}
+
+
+/* NAVBAR RESPONSIVENESS */
+@media (max-width: 885px) {
+    /* Hide desktop menu */
+    .nav-links {
+        display: none !important;
+    }
+
+    /* Show hamburger */
+    .hamburger {
+        display: flex !important;
+    }
+}
+
+/* Mobile slide-out menu */
+@media (max-width: 885px) {
+    .mobile-menu {
+        width: 70%;
+        max-width: 300px;
+        background: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+
+        padding: 100px 30px 30px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        border-radius: 0 0 0 30px;
+        box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+
+        transform: translateX(100%);
+        opacity: 0;
+        transition: 0.35s ease;
+        z-index: 2000;
+    }
+
+    .mobile-menu.show {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .mobile-menu a {
+        text-decoration: none;
+        color: black;
+        font-size: 24px;
+        font-weight: 600;
     }
 }

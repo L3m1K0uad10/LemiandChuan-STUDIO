@@ -43,8 +43,8 @@ function ProjectsPage() {
             
             <div className = "content-layer">
                 <div className = "page-header">
-                    <h1 style = {{fontSize: "150px", margin: "0px"}}>Projects</h1>
-                    <p style = {{fontSize: "50px", margin: "0px"}}>From <strong><em>idea</em></strong> to <strong><em>realization</em></strong></p>
+                    <h1>Projects</h1>
+                    <p>From <strong><em>idea</em></strong> to <strong><em>realization</em></strong></p>
                 </div>
                 <div className = "showcasing-container" style = {{display: "flex", justifyContent: "center", gap: "10px", marginTop: "50px"}}>
                     <img className = "showcase-image show-1" src = {Show1} alt = "project showcasing image 1" />

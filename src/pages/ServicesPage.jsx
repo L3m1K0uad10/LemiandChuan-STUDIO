@@ -43,13 +43,13 @@ function ServicesPage() {
             
             <div className = "content-layer">
                 <div className = "page-header">
-                    <h1 style = {{fontSize: "150px", margin: "0px"}}>Service</h1>
-                    <p style = {{fontSize: "50px", margin: "0px"}}><strong><em>Professionalism</em></strong> with<strong><em> good deal</em></strong></p>
+                    <h1>Service</h1>
+                    <p><strong><em>Professionalism</em></strong> with<strong><em> good deal</em></strong></p>
                 </div>
                 <div className = "services-cards-display-container">
                     {servicedisplays}
                 </div>
-                <div style = {{textAlign: "center", marginTop: "150px"}}>
+                <div className = "service-page-request-service-btn-container">
                     <button className = "request-service-btn">
                         Request a Service
                         <FontAwesomeIcon className = "request-service-btn-icon" icon = {faArrowRight}/>

@@ -31,8 +31,8 @@ function ContactPage() {
             
             <div className = "content-layer">
                 <div className = "page-header">
-                    <h1 style = {{fontSize: "150px", margin: "0px"}}>Contact Us</h1>
-                    <p style = {{fontSize: "50px", margin: "0px"}}><strong><em>Let's talk</em></strong></p>
+                    <h1>Contact Us</h1>
+                    <p><strong><em>Let's talk</em></strong></p>
                 </div>   
                 <form className = "contact-us-form" action="">
                     <div className = "name-container" style = {{marginBottom: "12px"}}><input className = "glass" type = "text" placeholder = "Full name/Company name"/></div>
