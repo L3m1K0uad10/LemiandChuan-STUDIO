@@ -22,6 +22,10 @@
     animation: left-fly-in 1.2s ease-out forwards;
 }
 
+.white-box-inner-container {
+    width: 580px;
+}
+
 @keyframes left-fly-in {
     from {
         opacity: 0;

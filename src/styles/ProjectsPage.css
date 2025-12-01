@@ -5,6 +5,12 @@
     justify-content: center;
 }
 
+.showcasing-container {
+    display: flex; 
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 50px
+}
 
 /* ELLISPE BLUR LAYER */
 

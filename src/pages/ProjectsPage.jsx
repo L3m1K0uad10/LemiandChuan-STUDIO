@@ -46,7 +46,7 @@ function ProjectsPage() {
                     <h1>Projects</h1>
                     <p>From <strong><em>idea</em></strong> to <strong><em>realization</em></strong></p>
                 </div>
-                <div className = "showcasing-container" style = {{display: "flex", justifyContent: "center", gap: "10px", marginTop: "50px"}}>
+                <div className = "showcasing-container">
                     <img className = "showcase-image show-1" src = {Show1} alt = "project showcasing image 1" />
                     <img className = "showcase-image show-2" src = {Show2} alt = "project showcasing image 2" />
                     <img className = "showcase-image show-3" src = {Show3} alt = "project showcasing image 3" />

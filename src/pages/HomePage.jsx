@@ -17,7 +17,7 @@ function HomePage() {
 
                 <div className = "white-box-container" style={{position: "relative", width: "100%", /* maxWidth: "900px", *//* height: "400px", */display: "flex", alignItems: "center"}}>
                     <div className = "white-box">
-                        <div style = {{width: "580px"}}>
+                        <div className = "white-box-inner-container">
                             <h1 style={{ color: "black", margin: 0, fontSize: "46px" }}>We Craft Digital Experiences That Matter</h1>
                         </div>
                         <p style = {{width: "450px", color: "black"}}>

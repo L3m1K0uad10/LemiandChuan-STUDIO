@@ -19,11 +19,15 @@
     }
     .service-card {
         display: flex;
+        align-items: center;
         width: 90%;
         gap: 20px;
     }
     .service-card .details {
         padding-right: 10px;
+    }
+    .service-card .details h4 {
+        margin-top: 0px;
     }
     .blue-rectangle-layer {
         width: 70%;
@@ -35,6 +39,14 @@
         margin-top: 50px;
     }
 }
+@media (max-width: 814px) {
+    .blue-rectangle-layer {
+        width: 75%;
+        height: 660px;
+        top: 770px;
+        left: 60%;
+    }
+}
 
 
 /* HOME PAGE RESPONSIVENESS */
@@ -44,6 +56,11 @@
     }
     .white-box {
         width: 100%;
+    }
+}
+@media (max-width: 850px) {
+    .white-box-inner-container {
+        width: auto;
     }
 }
 
@@ -64,12 +81,23 @@
         top: 775px;
     }
 }
+@media (max-width: 785px) {
+    body {
+        margin: 0px 50px 0px 50px;
+    }
+}
 
 
 /* PROJECTS PAGE RESPONSIVENESS */
 @media (max-width: 1130px) {
     .showcase-image {
         width: 200px;
+    }
+}
+@media (max-width: 735px) {
+    .showcasing-container {
+        overflow-x: auto;
+        justify-content: flex-start;
     }
 }
 
