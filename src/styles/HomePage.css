@@ -17,6 +17,17 @@
     /* gap: 30px */
 }
 
+.white-box-inner-container h1 {
+    color: black; 
+    margin: 0px;
+    font-size: 46px;
+}
+
+.white-box p {
+    width: 450px;
+    color: black;
+}
+
 .homepage-hero-section h3 {
     width: 580px;
     animation: left-fly-in 1.2s ease-out forwards;

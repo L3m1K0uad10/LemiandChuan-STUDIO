@@ -69,7 +69,7 @@ function ProjectsPage() {
                 </div>
                 <div style = {{display: "flex", justifyContent: "center", alignItems: "center", margin: "250px 0px"}}>
                     <div className = "call-container">
-                        <h4 style = {{fontSize: "50px", margin: "0px", fontWeight: "normal", textAlign: "center"}}>
+                        <h4>
                             Turn Your Ideas Into <strong><em>Digital Experiences That Leave A Lasting Impact</em></strong>
                         </h4>
                         <div style = {{display: "flex", justifyContent: "center", alignItems: "center"}}>

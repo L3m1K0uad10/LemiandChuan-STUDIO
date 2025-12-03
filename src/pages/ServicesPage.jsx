@@ -61,7 +61,7 @@ function ServicesPage() {
                         <img src = {Persona} alt = "persona" className = "wcu-image-persona"/>
                     </div>
                     <div className = "why-choose-us-info autoshow" style = {{width: "400px"}}>
-                        <p style = {{fontSize: "50px", margin: "0px"}}>Why Choose Us?</p>
+                        <p>Why Choose Us?</p>
                         <ul>
                             <li><strong><em>We Are Reliable</em></strong>: You Can Count On Us To Deliver Every Time.</li>
                             <li><strong><em>We Are Creative</em></strong>: We Turn Ideas Into Fresh, Impactful Digital Experiences.</li>

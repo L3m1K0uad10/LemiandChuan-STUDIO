@@ -39,12 +39,38 @@
         margin-top: 50px;
     }
 }
+@media (max-width: 970px) {
+    .why-choose-us-info p {
+        font-size: 35px; 
+        text-align: center;
+    }
+}
 @media (max-width: 814px) {
     .blue-rectangle-layer {
         width: 75%;
         height: 660px;
         top: 770px;
         left: 60%;
+    }
+}
+@media (max-width: 677px) {
+    .service-card {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .service-card img {
+        width: 100%;
+    }
+    .services-cards-display-container {
+        gap: 30px;
+    }
+    .blue-rectangle-layer {
+        width: 100%;
+        height: 1300px;
+        top: 1250px;
+        left: 50%;
     }
 }
 
@@ -63,6 +89,23 @@
         width: auto;
     }
 }
+@media (max-width: 680px) {
+    .white-box-inner-container h1 {
+        font-size:xx-large;
+    }  
+    .white-box p {
+        font-size: small;
+    }
+    .white-box {
+        padding: 20px;
+    }
+}
+@media (max-width: 667px) {
+    .homepage-hero-section h3 {
+        width: auto;
+        font-size: medium;
+    }  
+}
 
 
 /* CONTACT PAGE RESPONSIVENESS */
@@ -80,10 +123,32 @@
     .blue-rectangle-layer-2 {
         top: 775px;
     }
+    .contact-us-more-info-section-header {
+        font-size: 35px;
+    }
 }
 @media (max-width: 785px) {
     body {
         margin: 0px 50px 0px 50px;
+    }
+}
+@media (max-width: 687px) {
+    .contact-us-form input {
+        width: 380px;
+    }
+    .service-btn-container {
+        width: 410px;
+    }
+    .service-btn-container button {
+        padding: 14px;
+    }
+    .contact-us-form textarea {
+        width: 350px;
+    }
+}
+@media (max-width: 608px) {
+    .blue-rectangle-layer-2 {
+        top: 880px;
     }
 }
 
@@ -92,6 +157,11 @@
 @media (max-width: 1130px) {
     .showcase-image {
         width: 200px;
+    }
+}
+@media (max-width: 970px) {
+    .call-container h4 {
+        font-size: 35px; 
     }
 }
 @media (max-width: 735px) {

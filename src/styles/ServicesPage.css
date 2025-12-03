@@ -83,6 +83,10 @@
     filter: blur(100px);
 }
 
+.why-choose-us-info p {
+    font-size: 50px; 
+    margin: 0px
+}
 
 /* ANIMATION */
 .why-choose-us-image, .why-choose-us-info {
