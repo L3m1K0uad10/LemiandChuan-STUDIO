@@ -12,6 +12,7 @@
     margin-top: 50px
 }
 
+
 /* ELLISPE BLUR LAYER */
 
 .ellipse2-blur-layer {
@@ -160,6 +161,11 @@
     margin: 0px; 
     font-weight: normal; 
     text-align: center
+}
+
+.call-container p {
+    text-align: center; 
+    width: 480px
 }
 
 /* CALL CONTAINER AND ANIMATION */

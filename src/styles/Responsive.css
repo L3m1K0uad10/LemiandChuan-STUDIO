@@ -91,10 +91,11 @@
 }
 @media (max-width: 680px) {
     .white-box-inner-container h1 {
-        font-size:xx-large;
+        font-size: xx-large;
     }  
     .white-box p {
         font-size: small;
+        width: 100%;
     }
     .white-box {
         padding: 20px;
@@ -104,6 +105,11 @@
     .homepage-hero-section h3 {
         width: auto;
         font-size: medium;
+    }  
+}
+@media (max-width: 590px) {
+    .white-box {
+        margin-top: 0px;
     }  
 }
 
@@ -164,10 +170,65 @@
         font-size: 35px; 
     }
 }
+@media (max-width: 780px) {
+    .arc-blur-layer-1 {
+        width: 200px;
+    }
+    .arc-blur-layer-2 {
+        width: 200px;
+    }
+    .arc-blur-wrapper-1 {
+        bottom: 150px;
+    }
+    .arc-blur-wrapper-2 {
+        bottom: 200px;
+    }
+}
 @media (max-width: 735px) {
     .showcasing-container {
         overflow-x: auto;
         justify-content: flex-start;
+    }
+}
+@media (max-width: 590px) {
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .call-container p {
+        text-align: center; 
+        width: auto;
+    }
+    .ellipse2-blur-layer {
+        width: 300px;
+        height: 300px;
+        top: 380px;
+    }
+    
+    .ellipse3-blur-layer {
+        width: 207px;
+        height: 207px;
+    }
+    
+    .ellipse4-blur-layer {
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+    }
+    
+    .ellipse5-blur-layer {
+        width: 207px;
+        height: 207px;
+    }
+    .page-header h1 {
+        font-size: 70px; 
+    }
+    
+    .page-header p {
+        font-size: 35px;
+        margin: 0px;
     }
 }
 

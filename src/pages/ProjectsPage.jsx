@@ -73,7 +73,7 @@ function ProjectsPage() {
                             Turn Your Ideas Into <strong><em>Digital Experiences That Leave A Lasting Impact</em></strong>
                         </h4>
                         <div style = {{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                            <p style = {{textAlign: "center", width: "480px"}}>
+                            <p>
                                 You have a vision worth building — we bring it to life with design 
                                 and technology that stand out. 
                             </p>
