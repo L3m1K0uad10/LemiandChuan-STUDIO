@@ -73,6 +73,36 @@
         left: 50%;
     }
 }
+@media (max-width: 590px) {
+    .why-choose-us-image {
+        width: 100%;
+        height: auto; /* I ADDED THIS */
+    }
+    .wcu-image-bg {
+        width: calc(100% - 40px);
+    }
+    .wcu-image-persona {
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform: translateY(-6px);
+    }
+    .why-choose-us-info {
+        width: 100%;
+    }
+}
+@media (max-width: 550px) {
+    .service-card {
+        width: 90%;
+    }
+    .service-card .details h4, .why-choose-us-info p {
+        color: #0A15A7;
+        font-weight: bold;
+    }
+    .blue-rectangle-layer {
+        display: none;
+    }
+}
 
 
 /* HOME PAGE RESPONSIVENESS */
@@ -157,6 +187,33 @@
         top: 880px;
     }
 }
+@media (max-width: 590px) {
+    .name-container, .email-container, form .service-btn-container, form .textarea-container {
+        width: 80%;
+    }
+    .contact-us-form input {
+        width: calc(100% - 30px);
+    }
+    .contact-us-form textarea {
+        width: calc(100% - 60px)
+    }
+    .blue-rectangle-layer-2 {
+        top: 740px;
+    }
+}
+@media (max-width: 528px) {
+    .contact-us-more-info-section-header {
+        width: 100%;
+        align-self: center;
+        text-align: center;
+    }
+    .medias-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
 
 
 /* PROJECTS PAGE RESPONSIVENESS */

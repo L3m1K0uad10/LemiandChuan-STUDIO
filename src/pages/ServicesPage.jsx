@@ -56,11 +56,11 @@ function ServicesPage() {
                     </button>
                 </div>
                 <div className = "why-choose-us-container">
-                    <div className = "why-choose-us-image autoshow" style = {{position: "relative", width: "482px", height: "335px"}}>
+                    <div className = "why-choose-us-image autoshow">
                         <img src = {WCUImage} alt = "why choose us?" className = "wcu-image-bg"/>
                         <img src = {Persona} alt = "persona" className = "wcu-image-persona"/>
                     </div>
-                    <div className = "why-choose-us-info autoshow" style = {{width: "400px"}}>
+                    <div className = "why-choose-us-info autoshow">
                         <p>Why Choose Us?</p>
                         <ul>
                             <li><strong><em>We Are Reliable</em></strong>: You Can Count On Us To Deliver Every Time.</li>

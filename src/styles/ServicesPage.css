@@ -59,14 +59,16 @@
     width: 442px; 
     border: 20px solid white; 
     border-radius: 20px;
-    position: absolute;
+    position: relative; /* I CHANGED THIS */
+    display: block; /* I ADDED THIS */
 }
 
 .wcu-image-persona {
-    width: 500px;
+    width: 100%; /* I CHANGED THIS */
     position: absolute;
-    top: -20px;
-    left: 15px;
+    top: 0px; /* I CHANGED THIS */
+    left: 0px; /* I CHANGED THIS */
+    transform: translateY(-6px); /* I ADDED THIS */
 }
 
 .blur-layer {
@@ -89,10 +91,19 @@
 }
 
 /* ANIMATION */
-.why-choose-us-image, .why-choose-us-info {
+.why-choose-us-image {
+    position: relative; 
+    width: 482px; 
+    height: auto;  /* I CHANGED THIS */
     opacity: 0;
     transform: translateX(0); 
     transition: all 1s ease;
+}
+.why-choose-us-info {
+    opacity: 0;
+    transform: translateX(0); 
+    transition: all 1s ease;
+    width: 400px;
 }
 
 .why-choose-us-info.in-view, .why-choose-us-image.in-view {
