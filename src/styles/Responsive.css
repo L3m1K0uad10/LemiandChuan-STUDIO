@@ -140,7 +140,24 @@
 @media (max-width: 590px) {
     .white-box {
         margin-top: 0px;
+    }
+    body {
+        min-width: unset;
+        min-height: unset;
     }  
+}
+@media (max-width: 405px) {
+    .homepage-hero-section h3 {
+        text-align: center;
+        margin-top: 100px;
+    } 
+    .service-tags-container {
+        flex-direction: column;
+        margin-left: unset;
+    }
+    .white-box {
+        text-align: center;
+    }
 }
 
 
@@ -212,6 +229,18 @@
         align-items: center;
         gap: 30px;
     }
+}
+@media (max-width: 500px) {
+    .service-btn-container div {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .blue-rectangle-layer-2 {
+        height: 560px;
+        top: 790px;
+    }
+}
+@media (max-width: 447px) {
 }
 
 
